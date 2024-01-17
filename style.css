@@ -1,0 +1,26 @@
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.613);
+}
+.logo img{
+    width: 200px;
+}
+.list{
+    
+}
+.list ul{
+ list-style: none;
+ display: flex;
+ justify-content: space-around;
+ 
+}
+.list li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(212, 173, 43);
+}
+.list li a:hover{
+   color: rgb(169, 46, 27);
+}
