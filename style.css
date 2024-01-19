@@ -22,7 +22,9 @@ body::-webkit-scrollbar {
 .fontesc{
     color: rgb(186, 186, 186);
 }
-
+.fontbr li a{
+    color: rgb(0, 0, 0) !important;
+}
 /* MENU */
 #principal{
     width: 1366px;
@@ -47,7 +49,7 @@ body::-webkit-scrollbar {
 }
 
 .logo img {
-    width: 100px;
+    width: 110px;
 }
 
 
@@ -68,11 +70,10 @@ body::-webkit-scrollbar {
 
 
 #contatomenu{
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 25px;
     padding: 15px 40px;
     transition: 0.2s;
-    border-left: 1px solid white;
 }
 #contatomenu:hover{
     background-color: white;
