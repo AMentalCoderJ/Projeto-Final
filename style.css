@@ -131,7 +131,15 @@ body::-webkit-scrollbar {
         align-items: center;
         display: flex;
         justify-content: center;
+        overflow: hidden;
     }
+    .box img{
+        transition: .4s all ease-in-out;
+    }
+    .box img:hover{
+        transform: scale(1.7);   
+    }
+    
     .box2{
         width: 400px;
         height: 400px;
