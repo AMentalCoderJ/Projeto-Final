@@ -92,9 +92,7 @@ body::-webkit-scrollbar {
     background-image: url(./WhatsApp\ Image\ 2024-01-18\ at\ 20.55.46.jpeg);
     background-size: cover;
 }
-.cor1 img{
-    width: 100%;
-}
+
 
 
 .cor2 {
@@ -108,4 +106,77 @@ body::-webkit-scrollbar {
 }
 .cor5{
     background-color: coral;
+}
+
+/*        EVENTOS PROMOVIDOS       */
+#nossosprojetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh !important;
+}
+   .container{
+    
+
+    }
+    .blocos{
+        display: flex;
+        
+        
+    }
+    .box1{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(255, 115, 0);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .box2{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(165, 0, 151);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .box3{
+        width: 400px;
+        height: 400px;
+        background-color: palevioletred;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .box4{
+        width: 400px;
+        height: 400px;
+        background-color: #3a8f09;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .box5{
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .blocos img{
+        width: 200px;
+        display: flex;
+        
+    }
+    .centralizar.imgs{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    /*      FIM DO EVENTOS PROMOVIDOS       */
+
+
+@media screen and (max-width:978px) {
+    
 }
