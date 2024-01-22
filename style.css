@@ -338,6 +338,7 @@ body::-webkit-scrollbar {
     .social li a:hover{
         opacity: 1;
          transform: scale(1.2);
+         color: #fff;
     }
     
     .social li a::before{
