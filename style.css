@@ -314,12 +314,52 @@ body::-webkit-scrollbar {
     color: #e38f08;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-.social li{
-    list-style: none;
-    margin: 20px;
-    font-weight: bold;
-    font-size:large;
-}
+    .social li{
+        list-style: none;
+        margin: 20px;
+        font-weight: bold;
+        font-size:large;
+    }
+    
+    .social li a{
+        opacity: .7;
+        transition: 0.2s;
+        display: block;
+        position: relative;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .social:hover li a{
+        opacity: 0.8;
+       
+    }
+    
+    .social li a:hover{
+        opacity: 1;
+         transform: scale(1.2);
+    }
+    
+    .social li a::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(246, 68, 56, 0.93);
+        z-index: -1;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: .2s;
+        border-radius: 10px;
+    }
+    
+    .social li a:hover::before{
+        transform-origin: left;
+        transform: scaleX(1);
+        transition: trasnform .2s;
+    }
 .logo-rodape img{
     width: 250px;
 }
@@ -342,9 +382,6 @@ body::-webkit-scrollbar {
     justify-content: space-between;
 }
 
-.menu-social img{
-    fill: orange;
-}
 
 .menu-social h2{
     text-align: center;
