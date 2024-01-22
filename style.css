@@ -359,7 +359,7 @@ body::-webkit-scrollbar {
         transform-origin: left;
         transform: scaleX(1);
         transition: trasnform .2s;
-        
+        color: #fff;
     }
 .logo-rodape img{
     width: 250px;
