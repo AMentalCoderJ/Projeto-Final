@@ -462,3 +462,15 @@ body::-webkit-scrollbar {
         
     }
 }
+@media screen and (max-width: 1400px) {
+    .blocos{
+        flex-direction: column;
+        }
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5 {
+            width: 470px !important;
+        }
+    }
