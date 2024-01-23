@@ -473,4 +473,7 @@ body::-webkit-scrollbar {
         .box5 {
             width: 470px !important;
         }
+        .blocos{
+            margin-top: 880px;
+        }
     }
