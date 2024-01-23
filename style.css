@@ -462,8 +462,3 @@ body::-webkit-scrollbar {
         
     }
 }
-@media screen and (max-width: 1400px) {
-    .blocos{
-        flex-direction: column;
-        }
-    }
