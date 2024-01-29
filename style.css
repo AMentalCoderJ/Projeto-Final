@@ -834,7 +834,6 @@ a:is(:hover, :focus) figcaption {
         text-align: center;
     }
   
-
     .list li a {
         display: block;
         padding: 0;
