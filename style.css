@@ -733,7 +733,7 @@ a:is(:hover, :focus) figcaption {
 
     .diadosonho{
         display: block;
-      width: 375px !important; 
+      width: 375px ; 
  
     }
     .diadosonho h1{
@@ -745,7 +745,7 @@ a:is(:hover, :focus) figcaption {
       }
 
       #rodape{
-        width: 375px !important;
+        width: 375px ;
         margin-top: 900px;
       }
       .social{
