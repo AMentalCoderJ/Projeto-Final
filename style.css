@@ -789,7 +789,7 @@ a:is(:hover, :focus) figcaption {
 
 
 
-
+/*
 
 
 
@@ -944,7 +944,7 @@ a:is(:hover, :focus) figcaption {
 
 
 
-/*
+
 @media screen and (max-width: 768px) {
     
     
