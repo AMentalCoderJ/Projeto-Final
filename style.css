@@ -260,6 +260,7 @@ body::-webkit-scrollbar {
         justify-content: center;
     }
     .diadosonho{
+        width: 100%;
         text-align: center;
         background-color: #da7093;
         margin: 0 auto;
@@ -281,7 +282,7 @@ body::-webkit-scrollbar {
 }
 
     .ddsonho p{
-        font-weight: 600;
+        font-weight: 400;
         color: #fff;
         width: 1000px;
         margin: 0 auto;
@@ -298,7 +299,6 @@ body::-webkit-scrollbar {
 img {
 	width: 100%;
 	display: block;
-	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	transition: transform 1000ms;
 }
@@ -361,36 +361,12 @@ a:is(:hover, :focus) figcaption {
 	transition: opacity 600ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	figcaption {
-		transform: translate3d(0, 2rem, 0);
-	}
-	
-	figure::after {
-		border-radius: 50%;
-		opacity: 1;
-		transform: scale(0);
-		transition: transform 900ms;
-	}
-	
-	a:is(:hover, :focus) figure::after {
-		transform: scale(2.5);
-	}
 
-	a:is(:hover, :focus) figcaption {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-		transition: opacity 600ms 400ms, transform 600ms 400ms;
-	}
-
-	a:is(:hover, :focus) img {
-		transform: scale(1.2);
-	}
-}
 
 
     #rodape{
-        .social a{
+        
+    .social a{
     text-decoration: none;
     color: #e38f08;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -410,6 +386,8 @@ a:is(:hover, :focus) figcaption {
         position: relative;
         padding: 5px;
         text-align: center;
+        justify-content: center;
+        margin: 0 auto;
     }
     
     .social:hover li a{
@@ -587,15 +565,13 @@ a:is(:hover, :focus) figcaption {
 
     .diadosonho{
         display: block;
-      width: 320px !important; 
- 
+        width: 320px !important; 
     }
     .diadosonho h1{
         margin-top: 700px;
       }
     
       #album{
-        margin-top: 720px;
       }
 
       #rodape{
@@ -656,7 +632,7 @@ a:is(:hover, :focus) figcaption {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) /* 376px */{
     #principal {
         width: 375px ;
         flex-direction: column;
@@ -669,11 +645,11 @@ a:is(:hover, :focus) figcaption {
         flex-direction: column;
         text-align: center;
         position: absolute;
-        width: 375px ;
+        width: 100% ;
     }
 
     .list {
-        width: 375px ;
+        width: 100% ;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -701,14 +677,28 @@ a:is(:hover, :focus) figcaption {
     #sobre-nos{
         height: 1900px;
     }
-   
+
     .historia{
         display: block;
-        margin-top: -10px;
+        margin-top: 10px;
         text-align: center;
     }
-    
-    
+    .historia img{
+        margin: 0 auto;
+    }
+    .quemsomos img{
+        margin: 0 auto;
+    }
+    .objetivo img{
+        margin: 0 auto;
+    }
+
+    #album{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+    }
     .txthistoria p{
         padding: 0px 10px;
         font-size: 16px;
@@ -717,6 +707,8 @@ a:is(:hover, :focus) figcaption {
     
     .quemsomos{
         display: block;   
+        text-align: center;
+
     }
     
     .txtquemsomos p{
@@ -726,31 +718,43 @@ a:is(:hover, :focus) figcaption {
 
     .objetivo{
         display: block;   
+        text-align: center;
+
     }
 
     .blocos{
         display: block;
+        width: 100%;
     }
-
     .diadosonho{
         display: block;
-      width: 375px ; 
- 
+        width: 100%; 
+        margin: 0 auto;
+        height: 700px;
+    }
+    .ddsonho{
+        
     }
     .diadosonho h1{
         margin-top: 800px;
-      }
+
+    }
     
       #album{
         margin-top: 890px;
+        width: 100%;
       }
 
       #rodape{
-        width: 375px ;
-        margin-top: 900px;
+        margin-top: 1250px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
       }
+      
       .social{
-        width: 320px;
+        width: 100%;
+        margin: 0 auto;
       }
       .social ul{
         display: block;
@@ -786,11 +790,6 @@ a:is(:hover, :focus) figcaption {
 
 
 
-
-
-
-
-/*
 
 
 
@@ -799,18 +798,20 @@ a:is(:hover, :focus) figcaption {
 
 @media screen and (max-width: 480px) {
     #principal {
-        width: 480px ;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
     }
     
 
     #menu {
         flex-direction: column;
         text-align: center;
-        position: absolute;
-        width: 480px ;
+        width: 100%;
+        margin: 0 auto;
+
     }
 
     .list {
@@ -840,12 +841,13 @@ a:is(:hover, :focus) figcaption {
         margin: 0;
     }
     #sobre-nos{
-        height: 1600px;
+        height: 1900px;
+        width: 100%;
+        margin: 0 auto;
     }
    
     .historia{
         display: block;
-        margin-top: -10px;
         text-align: center;
     }
     .imghistoria{
@@ -853,7 +855,6 @@ a:is(:hover, :focus) figcaption {
     }
     
     .txthistoria p{
-        padding: 0px 10px;
         font-size: 16px;
     }
     
@@ -884,11 +885,14 @@ a:is(:hover, :focus) figcaption {
 
     .blocos{
         display: block;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .diadosonho{
         display: block;
-      width: 480px; 
+        width: 100%;
+        margin: 0 auto; 
  
     }
     .diadosonho h1{
@@ -900,7 +904,7 @@ a:is(:hover, :focus) figcaption {
       }
 
       #rodape{
-        width: 480px;
+        width: 100%;
         margin-top: 1070px;
       }
       .social{
@@ -945,127 +949,6 @@ a:is(:hover, :focus) figcaption {
 
 
 
-
-@media screen and (max-width: 768px) {
-    
-    
-   
-
-    
-
-    #menu {
-        flex-direction: column;
-        text-align: center;
-        position: absolute;
-        width: 768px;
-    }
-
-    .list {
-        width: 768px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .list ul {
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 5px;
-    }
-    
-    #banner h5{
-        margin-top: 350px;
-        text-align: center;
-    }
-  
-
-    .list li a {
-        display: block;
-        padding: 0;
-        margin: 0;
-    }
-    #sobre-nos{
-        height: 1600px;
-    }
-   
-    .historia{
-        display: block;
-        margin-top: -10px;
-        text-align: center;
-    }
-    .imghistoria{
-        margin-left: 60px;
-    }
-    
-    .txthistoria p{
-        padding: 0px 10px;
-        font-size: 16px;
-    }
-    
-    .quemsomos{
-        display: block;   
-    }
-    .imgquemsomos{
-        margin-left: 60px;
-    }
-    .txtquemsomos h2{
-        text-align: center;
-    }
-    
-    .txtquemsomos p{
-        padding: 0px 10px;
-        text-align: center;
-    }
-
-    .objetivo{
-        display: block;   
-    }
-    .imgobjetivo{
-        margin-left: 60px;
-    }
-    .txtobjetivo h2, p{
-        text-align: center;
-    }
-
-    .blocos{
-        display: block;
-    }
-
-    .diadosonho{
-        display: block;
-      width: 480px; 
- 
-    }
-    .diadosonho h1{
-        margin-top: 700px;
-      }
-    
-      #album{
-        margin-top: 980px;
-      }
-
-      #rodape{
-        width: 480px;
-        margin-top: 1070px;
-      }
-      .social{
-        width: 320px;
-      }
-      .social ul{
-        display: block;
-      }
-      .menu-social ul{
-        display: block;
-      }
-      .menu-social ul li{
-        display: flex;
-        justify-content: space-between;
-      }
-
-}
-*/
 
 
 
