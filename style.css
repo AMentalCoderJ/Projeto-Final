@@ -473,7 +473,20 @@ a:is(:hover, :focus) figcaption {
 
 
 
-
+#fixed-button {
+    display: none; /* Oculta o botão por padrão */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remova a decoração de texto padrão */
+}
 
 
 
@@ -493,7 +506,9 @@ a:is(:hover, :focus) figcaption {
         align-items: center;
         justify-content: center;
     }
-    
+    #fixed-button {
+        display: block;
+    }
 
     #menu {
         flex-direction: column;
