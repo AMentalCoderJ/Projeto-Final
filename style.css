@@ -664,7 +664,9 @@ a:is(:hover, :focus) figcaption {
         align-items: center;
         justify-content: center;
     }
-    
+    #fixed-button {
+        display: block;
+    }
 
     #menu {
         flex-direction: column;
