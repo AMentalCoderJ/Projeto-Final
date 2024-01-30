@@ -364,7 +364,7 @@ a:is(:hover, :focus) figcaption {
 	opacity: 1;
 	transition: opacity 600ms;
 }
-.container img{
+.container ul{
     border-radius: 10px;
 }
 
