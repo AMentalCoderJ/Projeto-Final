@@ -640,6 +640,7 @@ a:is(:hover, :focus) figcaption {
     }
     
 
+
     #menu {
         flex-direction: column;
         text-align: center;
@@ -662,6 +663,11 @@ a:is(:hover, :focus) figcaption {
         margin-bottom: 5px;
     }
     
+    #contatomenu{
+        width: 300px;
+        margin: 0 auto;
+    }
+
     #banner h5{
         margin-top: 300px;
         text-align: center;
