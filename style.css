@@ -859,7 +859,7 @@ a:is(:hover, :focus) figcaption {
         text-align: center;
     }
     .imghistoria{
-        margin-left: 60px;
+        margin-left: 0px;
     }
     
     .txthistoria p{
@@ -870,7 +870,7 @@ a:is(:hover, :focus) figcaption {
         display: block;   
     }
     .imgquemsomos{
-        margin-left: 60px;
+        margin-left: 0px;
     }
     .txtquemsomos h2{
         text-align: center;
@@ -885,7 +885,7 @@ a:is(:hover, :focus) figcaption {
         display: block;   
     }
     .imgobjetivo{
-        margin-left: 60px;
+        margin-left: 0px;
     }
     .txtobjetivo h2, p{
         text-align: center;
@@ -909,12 +909,12 @@ a:is(:hover, :focus) figcaption {
       }
     
       #album{
-        margin-top: 980px;
+        margin-top: 620px;
       }
 
       #rodape{
         width: 100%;
-        margin-top: 1070px;
+        margin-top: 620px;
       }
       .social{
         width: 320px;
