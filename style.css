@@ -364,6 +364,9 @@ a:is(:hover, :focus) figcaption {
 	opacity: 1;
 	transition: opacity 600ms;
 }
+#album{
+    border-radius: 10px;
+}
 
 
 
